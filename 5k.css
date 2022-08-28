@@ -98,20 +98,24 @@ nav a {
     line-height: 40px;
     font-size: 100%;
     margin-right: 3px;
+}
 
+nav a:hover {
+    background-color: #456a95;
+    color: #FFFFFF;
 }
 
 nav>a:last-child {
     border-right: none;
 }
 
-.section-container{
+.section-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.section{
+.section {
     width: 25vw;
     height: 25vh;
     box-sizing: border-box;
@@ -121,28 +125,33 @@ nav>a:last-child {
     flex-wrap: wrap;
 }
 
-.div-container{
+.div-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     color: #6EB2FF;
-    
+
 }
-.img{
+
+.img {
     width: 100px;
     margin: 10px;
 }
-.price{
+
+.price {
     color: #000000;
 }
+
 .footer {
     display: flex;
     justify-content: center;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.pages-container{
+
+.pages-container {
     width: 45%;
     height: 50vh;
     display: flex;
@@ -157,14 +166,15 @@ a{
     justify-content: center;
 }
 
-section .price{
+section .price {
     color: #6EB2FF;
 }
 
 .book-name {
     font-size: xx-large;
 }
-.explanation-pages{
+
+.explanation-pages {
     width: 50%;
     height: auto;
     display: flex;
@@ -172,7 +182,8 @@ section .price{
     justify-content: space-between;
     margin: 0px 400px 0px 400px;
 }
-.book-information{
+
+.book-information {
     width: 50%;
     height: 20vh;
     display: flex;

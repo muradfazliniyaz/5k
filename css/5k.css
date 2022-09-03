@@ -37,7 +37,7 @@ header div:nth-child(3) {
     display: flex;
     flex-direction: row;
     color: #6EB2FF;
-    width: 50px;
+    width: 50vw;
     height: 6vh;
     box-sizing: border-box;
     border: 3px solid #6EB2FF;
@@ -61,7 +61,7 @@ header div:nth-child(3) {
     box-sizing: border-box;
     border: none;
     background-color: #6EB2FF;
-    width: 100px;
+    width: 10vw;
     text-align: center;
     font-weight: bold;
     color: #FFFFFF;
@@ -95,8 +95,7 @@ nav a {
     font-weight: bold;
     border-right: 2px solid #FFFFFF;
     width: 13%;
-    line-height: 40px;
-    font-size: 100%;
+    line-height: 6vh;
     margin-right: 3px;
 }
 
@@ -113,13 +112,13 @@ nav>a:last-child {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 20px;
 }
 
 .section {
-    width: 25vw;
-    height: 25vh;
+    width: 24vw;
+    height: 24vh;
     box-sizing: border-box;
-    /* border: 1px solid black; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -130,7 +129,6 @@ nav>a:last-child {
     flex-direction: row;
     align-items: center;
     color: #6EB2FF;
-
 }
 
 .img {
@@ -152,18 +150,13 @@ a {
 }
 
 .pages-container {
-    width: 45%;
+    width: 50%;
     height: 50vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin: 50px 450px 0px 450px;
-}
-
-.img-pages {
-    display: flex;
-    justify-content: center;
+    margin: 5vh 25vw 0px 25vw;
 }
 
 section .price {
@@ -180,7 +173,7 @@ section .price {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0px 400px 0px 400px;
+    margin: 5vh 25vw 0px 25vw;
 }
 
 .book-information {
@@ -189,5 +182,41 @@ section .price {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0px 400px 0px 400px;
+    margin: 5vh 25vw 0px 25vw;
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        width: 50%;
+
+    }
+
+    .pages-img {
+        width: 50%;
+    }
+
+
+}
+
+@media screen and (max-width:600px) {
+    .section {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+
+    }
+
+    nav a {
+        width: 100%;
+        text-align: left;
+        border: none;
+
+    }
+
+    .pages-img {
+        width: 25%;
+    }
+
 }
